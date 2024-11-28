@@ -4,6 +4,7 @@ const config: ModuleFederationConfig = {
   name: 'masterdata',
   exposes: {
     './Module': './src/remote-entry.ts',
+    './Skills': './src/components/Skills/remote-entry.ts',
   },
 };
 

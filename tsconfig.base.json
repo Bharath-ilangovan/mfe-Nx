@@ -17,6 +17,7 @@
     "paths": {
       "@product-ui/cds": ["lib/cds/src/index.ts"],
       "masterdata/Module": ["apps/master/src/remote-entry.ts"],
+      "masterdata/Skills": ["apps/master/src/components/Skills/remote-entry.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,17 +1,15 @@
-import React from 'react'
+
 import { Provider } from 'react-redux'
 import { masterDataStore } from '../../store/store'
 import Skills from './Skills'
 
-interface Props {
 
-}
-
-const SkillsWithStore = (props: Props) => {
+const SkillsWithStore = () => {
     return (
-        <Provider store={masterDataStore}>
-            <Skills />
-        </Provider>
+        // <Provider store={masterDataStore}>
+        //     <Skills />
+        // </Provider>
+        <center>skills - working</center>
     )
 }
 

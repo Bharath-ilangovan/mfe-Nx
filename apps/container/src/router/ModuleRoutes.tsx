@@ -11,17 +11,17 @@ import Login from "../pages/Login";
 import MasterData from "../pages/MasterData/MasterData";
 import FactorySetup from "../pages/MasterData/FactorySetup/FactorySetup";
 import AuthProvider from "./AuthProvider";
+import Skills from "../pages/MasterData/FactorySetup/Skills/Skills";
 
 // const SecurityApp = lazy(() => import("SecurityApp/app"));
-// const SkillsPage = lazy(() => import("masterdata/Skills"));
+
 
 
 const MasterDataRoute = () => (
   <Route path="masterdata" element={<MasterData />} >
     <Route path="factorysetup" element={<FactorySetup />} handle={{ crumb: () => "Factory Setup" }}>
-      <Route path="skills" element={<Suspense fallback={<h1>Loading...</h1>}>
-        {/* <SkillsPage /> */}
-      </Suspense>} handle={{ crumb: () => "Skills" }} />
+      <Route path="skills" element={
+        <Skills />} handle={{ crumb: () => "Skills" }} />
     </Route>
   </Route>
 );
