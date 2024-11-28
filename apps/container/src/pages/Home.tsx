@@ -36,10 +36,6 @@ const Home = (props: Props) => {
     setModuleState(false);
   };
 
-  useEffect(() => {
-    navigate(activeModule);
-  }, [])
-
   return (
     <React.Fragment>
       <TitleBar
