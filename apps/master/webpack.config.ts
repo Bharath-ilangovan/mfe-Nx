@@ -6,6 +6,7 @@ import baseConfig from './module-federation.config';
 
 const config = {
   ...baseConfig,
+  devtool: 'source-map',
 };
 
 // Nx plugins for webpack to build config object from Nx options and context.
@@ -17,5 +18,5 @@ const config = {
 export default composePlugins(
   withNx(),
   withReact(),
-  withModuleFederation(config, { dts: false })
+  withModuleFederation(config, { dts: false }),
 );

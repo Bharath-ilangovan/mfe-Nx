@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@product-ui/cds": ["lib/cds/src/index.ts"],
-      "masterdata/Module": ["apps/master/src/remote-entry.ts"]
+      "masterdata/Module": ["apps/master/src/remote-entry.ts"],
     }
   },
   "exclude": ["node_modules", "tmp"]

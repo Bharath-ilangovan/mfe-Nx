@@ -1,13 +1,14 @@
 import * as React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
-import { Button } from "@product-ui/cds";
+import { Link, Route, RouterProvider, Routes } from 'react-router-dom';
+import { router } from './router/ModuleRoutes';
+import "./app.module.css"
 
-const Masterdata = React.lazy(() => import('masterdata/Module'));
+// const Masterdata = React.lazy(() => import('masterdata/Module'));
 
 export function App() {
   return (
-    <React.Suspense fallback={null}>
-      <ul>
+    <React.Fragment>
+      {/* <ul>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -21,8 +22,9 @@ export function App() {
           <Button />
         </>} />
         <Route path="/masterdata" element={<Masterdata />} />
-      </Routes>
-    </React.Suspense>
+      </Routes> */}
+      <RouterProvider router={router} />
+    </React.Fragment>
   );
 }
 

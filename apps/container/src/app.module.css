@@ -1,0 +1,59 @@
+/* Your styles goes here. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #f8f7f6;
+  }
+  
+  /* @media only screen and (min-resolution: 1dppx) {
+    body {
+      background-color: #fefefe;
+    }
+  } */
+  
+  @media only screen and (min-resolution: 4.25dppx) {
+    .container-main {
+      /* background-color: rgb(190, 241, 190); */
+      /* scale: 0.75; */
+      /* transform: scale(1); */
+    }
+  }
+  
+  /* .sx-react-calendar-wrapper {
+      height: 60vh;
+      min-height: auto;
+      width: 99.9%;
+      min-width: auto;
+    } */
+  
+  /* For Chrome, Edge, and Safari */
+  ::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #dcdcdc; /* Color of the scrollbar thumb (the draggable part) */
+    border-radius: 10px; /* Rounded corners for the thumb */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b0b0b0; /* Color when hovering over the scrollbar */
+  }
+  
+  /* For Firefox */
+  * {
+    scrollbar-width: thin; /* Make the scrollbar thinner */
+    scrollbar-color: #dcdcdc #f1f1f1; /* Thumb color and track color */
+  }
+  
